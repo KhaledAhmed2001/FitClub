@@ -1,0 +1,64 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+    justify-content: center;
+}
+.left-j{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.left-j>div{
+    display: flex;
+    gap: 1rem;
+}
+.left-j>hr{
+    position: absolute;
+    content: "";
+    width: 10.5rem;
+    /* height: 0.5rem; */
+    border: 2px solid var(--orange);
+    background: var(--planCard);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+.right-j{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.email-container{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+.email-container>input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--lightgray);
+}
+::placeholder{
+    color: var(--lightgray);
+}
+.btn-j{
+    background: var(--orange);
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    .join{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .left-j{
+        font-size: x-large;
+        flex-direction: column;
+    }
+    .right-j{
+        padding: 2rem;
+    }
+}
